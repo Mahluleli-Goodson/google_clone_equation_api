@@ -2,13 +2,14 @@
   "name": "equation_solver_api",
   "version": "1.0.0",
   "description": "A simple API that solves One/First Degree linear equations",
-  "main": "index.js",
+  "main": "src/app.ts",
   "keywords": [],
   "author": "Mahluleli Goodson",
   "license": "MIT",
   "scripts": {
+    "start": "node build/app.js",
     "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
-    "build": "tsc",
+    "build": "tsc -p tsconfig.build.json",
     "test": "jest --coverage"
   },
   "dependencies": {
