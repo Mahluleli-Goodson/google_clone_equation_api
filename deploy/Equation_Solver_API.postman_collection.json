@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "a84e3b12-7c78-44ac-a276-7f4a1761134a",
+		"name": "Equation_Solver_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1730971"
+	},
+	"item": [
+		{
+			"name": "UpTime",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:2022/uptime",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "2022",
+					"path": [
+						"uptime"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Solve_Equation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer XPNlOLtLyxxJ2Yl1ygCWt27CAmHV7Ri72EUi2UWZGSVU925ucu",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"equation\": \"2x + 6 = 6\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:2022/api/algebra/solve",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "2022",
+					"path": [
+						"api",
+						"algebra",
+						"solve"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
